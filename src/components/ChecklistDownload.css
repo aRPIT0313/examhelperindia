@@ -1,0 +1,81 @@
+.checklist-section {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  padding: 1.4rem;
+}
+
+.checklist-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.checklist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.checklist li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.92rem;
+  padding: 0.55rem 0.8rem;
+  border-radius: 9px;
+  transition: background 0.2s;
+}
+
+.checklist li.done {
+  background: var(--success-light);
+  color: var(--success);
+  font-weight: 600;
+}
+
+.checklist li.pending {
+  background: var(--surface-alt);
+  color: var(--text-muted);
+}
+
+.check-icon { font-size: 1.1rem; }
+
+.combined-download {
+  background: var(--accent-light);
+  border: 1.5px solid var(--accent-border);
+  border-radius: 11px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.combined-hint {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.btn-combined {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.85rem;
+  border-radius: 11px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-combined:hover { opacity: 0.9; }
+.btn-combined:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.checklist-pending-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+}

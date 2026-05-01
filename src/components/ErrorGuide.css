@@ -1,0 +1,63 @@
+.error-guide {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  padding: 1.4rem;
+}
+
+.guide-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.error-list { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.error-item {
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.error-item.open { border-color: var(--accent); }
+
+.error-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.75rem 1rem;
+  background: var(--surface-alt);
+  transition: background 0.2s;
+}
+
+.error-item.open .error-header { background: var(--accent-light); }
+
+.error-icon { font-size: 1.1rem; }
+
+.error-title {
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.error-chevron {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.error-fix {
+  padding: 0.8rem 1rem;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  background: var(--surface);
+}
+
+.fix-label {
+  font-weight: 700;
+  color: var(--success);
+}

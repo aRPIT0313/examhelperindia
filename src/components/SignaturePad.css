@@ -1,0 +1,152 @@
+.sig-pad { display: flex; flex-direction: column; gap: 1rem; }
+
+.sig-mode-tabs {
+  display: flex;
+  gap: 0.5rem;
+  background: var(--surface-alt);
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.sig-mode-tabs button {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sig-mode-tabs button.active {
+  background: var(--surface);
+  color: var(--accent);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.canvas-wrap { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.sig-canvas {
+  width: 100%;
+  height: 160px;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  background: #ffffff;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.canvas-hint {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.btn-clear {
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+  align-self: flex-start;
+  transition: all 0.2s;
+}
+
+.btn-clear:hover { border-color: var(--danger); color: var(--danger); }
+
+.sig-upload-preview {
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 0.8rem;
+  background: white;
+  text-align: center;
+}
+
+.sig-upload-preview img {
+  max-height: 100px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.sig-preset-info {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.sig-preset-info span {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  background: var(--surface-alt);
+  padding: 3px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.sig-error {
+  color: var(--danger);
+  font-size: 0.88rem;
+  background: var(--danger-light);
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+}
+
+.btn-process-sig {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 11px;
+  font-size: 0.98rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-process-sig:hover { opacity: 0.9; }
+.btn-process-sig:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.sig-result {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  background: var(--success-light);
+  border: 1.5px solid var(--success);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.sig-result-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--success);
+}
+
+.sig-preview-img {
+  max-height: 80px;
+  border-radius: 6px;
+  background: white;
+  border: 1px solid var(--border);
+  padding: 4px;
+  object-fit: contain;
+}
+
+.btn-download-sig {
+  background: var(--success);
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-download-sig:hover { opacity: 0.9; }
