@@ -5,8 +5,9 @@ import { EXAMS, EXAM_CATEGORIES } from "../config/examConfig";
 import { ARTICLES } from "../config/blogConfig";
 import "./HomePage.css";
 
-// localStorage key for recently used tools
+// localStorage keys
 const RECENT_KEY = "examhelper_recent_tools";
+const VISIT_KEY = "examhelper_visit_counts";
 
 function getRecentTools() {
   try {
@@ -17,18 +18,38 @@ function getRecentTools() {
   }
 }
 
+function getTrendingExams() {
+  try {
+    const raw = localStorage.getItem(VISIT_KEY);
+    if (!raw) return [];
+    const counts = JSON.parse(raw); // { slug: count }
+    return Object.entries(counts)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 4)
+      .map(([slug]) => EXAMS.find((e) => e.slug === slug))
+      .filter(Boolean);
+  } catch {
+    return [];
+  }
+}
+
 export default function HomePage() {
   const categories = Object.entries(EXAM_CATEGORIES);
   const [recentSlugs, setRecentSlugs] = useState([]);
+  const [trendingExams, setTrendingExams] = useState([]);
 
   useEffect(() => {
     setRecentSlugs(getRecentTools());
+    setTrendingExams(getTrendingExams());
   }, []);
 
   const recentExams = recentSlugs
     .map((slug) => EXAMS.find((e) => e.slug === slug))
     .filter(Boolean)
     .slice(0, 4);
+
+  // Only show trending if at least 2 unique exams visited
+  const showTrending = trendingExams.length >= 2;
 
   return (
     <>
@@ -77,6 +98,26 @@ export default function HomePage() {
                   key={exam.id}
                   to={`/exam/${exam.slug}`}
                   className="exam-card exam-card--recent"
+                >
+                  <div className="exam-name">{exam.name}</div>
+                  <div className="exam-sub">{exam.fullName}</div>
+                  <div className="exam-arrow">Open Tool →</div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* 🔥 Trending Tools — only shown after 2+ exams visited */}
+        {showTrending && (
+          <div className="card trending-tools-card">
+            <div className="card-title">🔥 Trending Tools</div>
+            <div className="exam-grid">
+              {trendingExams.map((exam) => (
+                <Link
+                  key={exam.id}
+                  to={`/exam/${exam.slug}`}
+                  className="exam-card exam-card--trending"
                 >
                   <div className="exam-name">{exam.name}</div>
                   <div className="exam-sub">{exam.fullName}</div>

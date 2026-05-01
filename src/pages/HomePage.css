@@ -289,3 +289,19 @@
   background: var(--accent);
   color: white;
 }
+
+/* ── Trending Tools ── */
+.trending-tools-card {
+  border-left: 4px solid #f97316;
+}
+.trending-tools-card .card-title {
+  color: #f97316;
+}
+.exam-card--trending {
+  border-color: #fed7aa;
+  background: linear-gradient(135deg, #fff7ed 0%, #fff 100%);
+}
+.exam-card--trending:hover {
+  border-color: #f97316;
+  box-shadow: 0 4px 16px rgba(249, 115, 22, 0.15);
+}

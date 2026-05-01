@@ -563,6 +563,322 @@ Before uploading to the portal:
 Use **the same signature** everywhere — admit card, attendance sheet, certificate, registration form. Portals sometimes compare, and invigilators in the exam hall will ask you to reproduce it. Practice your exam signature before applying so it's consistent.
     `,
   },
+
+  {
+    slug: "how-to-fill-ssc-cgl-form-online",
+    title: "How to Fill SSC CGL Form Online — Step-by-Step Process Guide",
+    description:
+      "A complete walkthrough of the SSC CGL online application process: registration, document uploads, fee payment, and final submission.",
+    category: "Photo Guide",
+    readTime: "7 min",
+    publishDate: "April 2026",
+    content: `
+## Before You Start: What You Need
+
+The SSC CGL application process happens entirely online. Before you begin, keep these ready:
+
+- A valid email address and mobile number (active, yours — OTPs will be sent)
+- A scanned passport-size photo meeting the size requirements
+- A scanned signature image
+- A debit/credit card or UPI app for fee payment
+- Scanned copies of your class 10 and graduation marksheets (for reference, not usually uploaded at registration stage)
+
+Check the official notification PDF for the current cycle's exact document requirements before starting.
+
+---
+
+## Step 1: Register on the SSC Portal
+
+Go to the official SSC website (ssc.gov.in) and look for the "New User? Register Now" or "One-Time Registration" link.
+
+You'll need to enter:
+- Basic personal details (name, date of birth, gender, category)
+- Father's and mother's name
+- Contact details (email + mobile)
+- A password
+
+After registration, SSC sends a **Registration ID** to your email. Save it. This is your permanent SSC ID — you'll use it for every future SSC application.
+
+---
+
+## Step 2: Log In and Start the CGL Application
+
+Log in with your Registration ID and password. Look for the active CGL notification and click "Apply."
+
+The application form has multiple sections — fill them in order and **save after each section**. Never skip saving.
+
+Sections typically include:
+1. Personal details (pre-filled from registration — verify carefully)
+2. Educational qualifications
+3. Post preferences
+4. Exam centre preferences
+5. Document upload (photo + signature)
+6. Declaration and submission
+
+---
+
+## Step 3: Upload Your Photo
+
+This is where most candidates get stuck. The portal has strict size limits and will reject your upload without a useful error message.
+
+**Standard requirements (always verify in the current notification):**
+- Format: JPG/JPEG only
+- File size: typically 20KB to 50KB
+- Dimensions: usually 200 × 230 pixels
+
+Use our free resize tool to compress your photo to the exact required size before uploading. Take a clear passport-size photo with white background, upload it, set the target KB, and download.
+
+**Common mistakes:**
+- Uploading a PNG or HEIC file (convert to JPG first)
+- File size too large (portal silently rejects it)
+- Scanned photo with grey/cream background instead of white
+
+---
+
+## Step 4: Upload Your Signature
+
+Your signature upload requirements are usually different from the photo:
+
+**Standard signature requirements:**
+- Format: JPG/JPEG
+- File size: typically 10KB to 20KB
+- Dimensions: usually 140 × 60 pixels
+- Ink: black or blue on white paper
+
+Sign on a blank white sheet. Take a photo or scan it. Use our signature resize tool to compress it to the required dimensions and file size.
+
+**Important:** Sign in the same style every time — your exam hall invigilator will compare it with your admit card signature.
+
+---
+
+## Step 5: Pay the Application Fee
+
+After document upload, you'll be directed to the payment page.
+
+- General/OBC candidates: ₹100 (approximate — verify in current notification)
+- SC/ST/PwD/Female candidates: usually exempt
+
+Payment methods accepted: Net banking, credit/debit card, UPI. Keep the payment receipt / transaction ID screenshot — you'll need it if there's any issue.
+
+---
+
+## Step 6: Submit and Download Confirmation
+
+After successful payment, submit the application. **Download and save the PDF confirmation immediately.** You'll need it to:
+- Check your application number
+- Access your admit card later
+- Reference during any correspondence with SSC
+
+---
+
+## After Submission: What Next
+
+- Monitor the official SSC website for admit card release dates
+- Your admit card will be downloadable from the same portal
+- Exam date, centre, and timing are all on the admit card — no separate communication is sent via post
+
+**Pro tip:** Set a reminder to download your admit card as soon as it's released. Some exam centres fill up for preferred slots.
+    `,
+  },
+  {
+    slug: "ibps-po-application-photo-guide",
+    title: "IBPS PO Application Photo & Signature Guide — What Actually Works",
+    description:
+      "Exact photo and signature specifications for IBPS PO applications, common upload errors, and how to fix them without going to a studio.",
+    category: "Photo Guide",
+    readTime: "5 min",
+    publishDate: "April 2026",
+    content: `
+## IBPS PO Photo Requirements: What the Portal Expects
+
+IBPS (Institute of Banking Personnel Selection) is one of the strictest portals when it comes to photo uploads. The portal actively rejects photos that don't meet specifications — and the error messages are often unclear.
+
+Always verify the exact requirements in the current official notification, but as general guidance:
+
+| Parameter | Typical Requirement |
+|-----------|-------------------|
+| Format | JPG / JPEG only |
+| File Size | 20 KB – 50 KB |
+| Dimensions | 200 × 230 pixels |
+| Background | White or light grey |
+| Expression | Neutral, face clearly visible |
+| Recency | Taken within last 6 months |
+
+---
+
+## Signature Requirements
+
+Your signature is equally important. The IBPS portal has a separate upload field for it.
+
+| Parameter | Typical Requirement |
+|-----------|-------------------|
+| Format | JPG / JPEG |
+| File Size | 10 KB – 20 KB |
+| Dimensions | 140 × 60 pixels |
+| Ink colour | Black or blue |
+| Background | White |
+
+---
+
+## The Most Common Upload Errors and Fixes
+
+**Error: "File size exceeds maximum limit"**
+Your photo is too large. Use our free tool — upload your photo, set target KB to 40KB (safely within limit), download.
+
+**Error: "Invalid file format"**
+You uploaded a PNG, HEIC, WebP, or BMP file. IBPS accepts only JPG/JPEG. Most phones save as HEIC (iPhone) or PNG. Open the file on your phone, share/export as JPG, then resize.
+
+**Error: "Dimensions not matching"**
+Your photo's width and height don't match the required pixel dimensions. Use our tool to set exact width and height after resizing the KB.
+
+**Error: Upload button greyed out / page freezes**
+Try a different browser (Chrome works best for IBPS portal). Clear browser cache. If on mobile, switch to desktop mode in your browser settings.
+
+---
+
+## How to Get a Good Photo Without Going to a Studio
+
+You can take a usable passport photo with any smartphone:
+
+1. Find a white wall or hang a white bedsheet as background
+2. Stand 1–2 feet from the wall (avoids shadows on background)
+3. Use good natural light — face a window, don't stand with window behind you
+4. Ask someone to take the photo — selfies often get the angle wrong
+5. Take 5–6 shots and pick the sharpest, most centred one
+
+Then upload to our tool, set dimensions to 200×230 pixels and target size to 40KB, and download. Done.
+
+---
+
+## Signature Tips
+
+- Sign on a blank A4 sheet with a black ballpoint pen
+- Sign your **full signature**, not just initials
+- Leave clear white space around the signature — don't sign edge to edge on the paper
+- Photograph it with good lighting, then crop it so only the signature area remains
+- Use our signature tool to resize to the required dimensions
+
+---
+
+## Before You Submit
+
+Do a final check:
+- Photo: white background, face clearly visible, correct file size
+- Signature: clear, on white background, correct file size
+- Both in JPG format
+- You've previewed the uploads in the application form before final submission
+
+Download the application PDF after submission — it serves as your receipt.
+    `,
+  },
+  {
+    slug: "railway-rrb-form-photo-tips",
+    title: "Railway RRB Exam Form Photo Tips — Avoid Rejection at Application Stage",
+    description:
+      "A practical guide to uploading photos and signatures for Railway Recruitment Board (RRB) exam applications. Avoid common mistakes that cause form rejection.",
+    category: "Photo Guide",
+    readTime: "5 min",
+    publishDate: "April 2026",
+    content: `
+## Why RRB Photo Uploads Get Rejected
+
+Railway Recruitment Board exams (RRB NTPC, RRB Group D, RRB ALP, etc.) attract millions of applicants. The portal sees heavy load and is strict about document specifications — partly to filter out careless applications, partly due to technical limitations.
+
+The most common reasons for rejection at the upload stage:
+
+- Photo file is too large (even 52KB when limit is 50KB will be rejected)
+- Wrong format (HEIC, PNG, BMP instead of JPG)
+- Dimensions don't match the required pixel size
+- Background isn't white (coloured studio backgrounds are rejected)
+- Photo is blurry, has shadows, or face isn't clearly visible
+
+All of these are easily fixable before you start the application.
+
+---
+
+## RRB Photo Specifications
+
+Always verify in the official notification for the specific RRB and post you're applying for. As general guidance:
+
+| Parameter | Typical Value |
+|-----------|--------------|
+| Format | JPG / JPEG |
+| File Size | 20 KB – 50 KB |
+| Dimensions | 200 × 230 px (portrait) |
+| Background | Plain white |
+| Attire | No caps, no dark glasses |
+| Recency | Within last 3–6 months |
+
+---
+
+## RRB Signature Specifications
+
+| Parameter | Typical Value |
+|-----------|--------------|
+| Format | JPG / JPEG |
+| File Size | 10 KB – 40 KB |
+| Dimensions | 200 × 100 px (varies) |
+| Ink | Black ink on white paper |
+
+Note: RRB signature dimensions sometimes differ from SSC/IBPS — always check the specific notification. Some RRBs require larger signature images.
+
+---
+
+## Step-by-Step: Preparing Your Photo
+
+**Step 1: Take the photo correctly**
+White background is mandatory. Natural daylight facing a window gives the best result. Face should be centred, both ears visible, neutral expression.
+
+**Step 2: Check format**
+On Android: most camera apps save JPG by default — you're fine.
+On iPhone: go to Settings → Camera → Formats → Most Compatible. This saves as JPG instead of HEIC.
+
+**Step 3: Resize using our free tool**
+Upload your photo → set target dimensions (e.g., 200×230 px) → set target size (e.g., 40 KB) → download.
+
+**Step 4: Verify before uploading**
+Open the downloaded file. Check: is the face clear? Is the background white? Right-click → Properties to confirm file size is under the limit.
+
+---
+
+## Multiple RRB Regions: Same Photo Works
+
+If you're applying to multiple RRBs (different regional boards for different posts), the photo requirements are generally the same across regions. One correctly prepared photo can be used for all of them.
+
+However, **check the notification for each application separately** — requirements do occasionally differ for different post categories.
+
+---
+
+## Document Upload Order on the RRB Portal
+
+Most RRB portals ask for uploads in this sequence:
+1. Photo
+2. Signature
+3. Left thumb impression (for some categories)
+4. Hand-written declaration (for some posts)
+
+The thumb impression and hand-written declaration, if required, need to be on white paper with black ink, scanned or photographed cleanly. The same file size rules apply.
+
+---
+
+## After Upload: Don't Close the Tab Immediately
+
+Wait for the green confirmation indicator after each upload. Some candidates close the browser before the upload completes and don't notice until they try to download their application form.
+
+After completing all uploads, go back to the application preview to verify all images appear correctly in the form before final submission.
+
+---
+
+## If You Face Portal Errors
+
+RRB portals frequently experience downtime near deadlines. If you encounter:
+- **Blank page after login**: clear browser cache or try incognito mode
+- **Upload button not responding**: try Chrome in desktop mode
+- **Transaction failure during fee payment**: check your bank statement before retrying — duplicate payments are common and require refund requests
+
+Apply well before the deadline — at least 3–4 days — to avoid peak load and have time to fix issues.
+    `,
+  },
 ];
 
 export const getArticleBySlug = (slug) =>

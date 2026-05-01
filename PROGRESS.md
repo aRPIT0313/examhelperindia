@@ -1,115 +1,157 @@
-# 🚀 EXAM FORM HELPER — SESSION PROGRESS TRACKER
-# Paste this entire file at the start of every new session
+# Exam Form Helper India — Progress Tracker
 
-## PROJECT INFO
-- Name: Exam Form Helper India
-- Stack: React + Vite + React Router + JSZip + React Helmet Async
-- Hosting: Vercel (free)
-- GitHub: https://github.com/aRPIT0313/examhelperindia
-- All processing: 100% client-side (Canvas API, no server)
+## Project Overview
+Free React website helping Indian exam aspirants resize photos and signatures for competitive exam forms.
+
+**GitHub:** https://github.com/aRPIT0313/examhelperindia
+**Live URL:** https://dream-virid.vercel.app
 
 ---
 
-## ✅ SESSION 1 — COMPLETED
+## ✅ SESSION 1 — COMPLETE
 
-### Build Status: ✅ PASSED
-
-Core structure: All components, hooks, HomePage, ToolPage, 12 exams, Canvas compression.
-
----
-
-## ✅ SESSION 2 — COMPLETED (May 2026)
-
-### Build Status: ✅ PASSES (npm run build — 0 errors)
-
-### New Files Created:
-```
-src/config/blogConfig.js               (5 full evergreen articles)
-src/pages/BlogPage.jsx + .css          (/blog route)
-src/pages/BlogArticle.jsx + .css       (/blog/:slug route)
-public/robots.txt
-public/sitemap.xml                     (28 URLs with priorities)
-public/manifest.json                   (PWA installable)
-```
-
-### Modified Files:
-```
-src/App.jsx                            (+blog routes, +lazy loading)
-src/config/examConfig.js               (+10 exams = 22 total)
-src/pages/HomePage.jsx                 (+recently used tools, +blog preview)
-src/pages/HomePage.css                 (+new styles)
-src/pages/ToolPage.jsx                 (+localStorage recent tracking)
-index.html                             (+manifest, +Google Fonts, +GA4 placeholder)
-```
-
-### Session 2 Features:
-- BlogPage + BlogArticle with full markdown-like renderer
-- 5 evergreen articles (process guides, no exam specs)
-- 10 more exams (22 total: SSC CPO, GD, NDA, CDS, CISF, SBI Clerk, RBI, LIC, MPSC, UPPSC)
-- Recently used tools (localStorage) on Homepage
-- Blog preview on Homepage
-- Lazy loading (Suspense) for all pages
-- robots.txt, sitemap.xml, manifest.json
-- GA4 placeholder (commented) in index.html
-- Google Fonts loaded in index.html
+### What was built:
+- Full project structure with Vite + React 18 + React Router v6
+- `examConfig.js` with 12 exams across SSC, Bank, Railway, UPSC, Entrance categories
+- Canvas API image compression engine (`imageUtils.js`, `useImageProcessor.js`)
+- Homepage with hero, exam grid by category, how-it-works, features
+- ToolPage with 6-step flow: upload → requirements → preview → signature → ZIP → error guide
+- `RequirementsForm.jsx` — user enters their own KB/px/format values
+- `ImageUploader.jsx`, `PreviewDownload.jsx`, `SignaturePad.jsx` (draw or upload)
+- `ChecklistDownload.jsx` — combined ZIP of photo + signature
+- `ErrorGuide.jsx` — common portal errors + fixes
+- `Navbar.jsx`, `Footer.jsx`
+- Dynamic routing: `/exam/:slug` → exam-specific ToolPage
+- Mobile-first responsive CSS (all in separate `.css` files)
+- SEO meta tags via `react-helmet-async`
+- AdSense placeholder `.ad-slot` divs in ToolPage + HomePage
+- WhatsApp share + Copy Link buttons
+- Disclaimer + official site link on every exam page
 
 ---
 
-## 🔄 SESSION 3 — TODO
+## ✅ SESSION 2 — COMPLETE
 
-1. Replace AdSense placeholder divs with real AdSense code (need publisher ID)
-2. Activate GA4 in index.html (need Measurement ID G-XXXXXXXXXX)
-3. Add "Popular Exams" trending section on Homepage (localStorage view counts)
-4. Add /blog link to Footer component
-5. Add Google Search Console verification meta tag
-6. More blog articles (optional)
+### What was built:
+- `/blog` route → `BlogPage.jsx` (article listing grid)
+- `/blog/:slug` route → `BlogArticle.jsx` (full content renderer with tables, lists, headings)
+- `blogConfig.js` with **5 evergreen articles**:
+  - `how-to-resize-photo-for-exam-form`
+  - `common-photo-upload-errors`
+  - `what-is-kb-and-pixels`
+  - `how-to-create-signature-for-exam-form`
+  - `photo-size-guide-for-all-indian-exams`
+- **10 more exams** added → **22 total** in `examConfig.js`:
+  - SSC CPO, SSC GD, NDA, CDS, CISF AC
+  - SBI Clerk, RBI Grade B, LIC AAO
+  - MPSC, UPPSC
+- Recently used tools on Homepage (localStorage key: `examhelper_recent_tools`, last 4 exams)
+- Blog preview section on Homepage (3 articles + View All link)
+- Lazy loading for all pages via `React.lazy` + `Suspense`
+- `public/robots.txt` (allows all, points to sitemap)
+- `public/sitemap.xml` (28 URLs with priorities and changefreq)
+- `public/manifest.json` (PWA manifest — installable on mobile)
+- GA4 placeholder in `index.html` (commented out, ready to activate)
+- Google Fonts (Plus Jakarta Sans + Syne) loaded in `index.html`
+- Footer updated with `/blog` link
 
-### Paste to Start Session 3:
+---
+
+## ✅ SESSION 3 — COMPLETE
+
+### What was built:
+
+#### 1. index.html updates
+- AdSense script placeholder added (commented — fill in publisher ID to activate)
+- GA4 script placeholder cleaned up with clear activation instructions
+- Google Search Console meta tag placeholder added (commented — fill in verification code)
+- All three placeholders clearly labeled with what to replace
+
+#### 2. Trending Tools on Homepage
+- `ToolPage.jsx`: tracks visit counts per exam in localStorage (`examhelper_visit_counts`)
+- `HomePage.jsx`: reads visit counts, shows top 4 most-visited exams as "🔥 Trending Tools"
+- Only displayed if ≥ 2 unique exams have been visited (avoids showing on first visit)
+- Orange accent color to distinguish from Recently Used (blue)
+- `HomePage.css`: trending card styles appended
+
+#### 3. Footer updated
+- Added "Free Guides" link to `/blog`
+- Added direct links to two key articles
+- "Resources" column replaces "Tools" column
+
+#### 4. 3 New Blog Articles in blogConfig.js (8 total now)
+- `how-to-fill-ssc-cgl-form-online` — full SSC CGL application walkthrough
+- `ibps-po-application-photo-guide` — IBPS PO photo & signature guide
+- `railway-rrb-form-photo-tips` — RRB exam photo upload tips
+- All evergreen, no exam-specific specs, process-focused
+
+#### 5. sitemap.xml updated
+- 3 new blog article URLs added (total ~31 URLs now)
+
+---
+
+## 🔲 SESSION 4 TASKS (next session)
+
+### Priority items:
+1. **Activate AdSense** — user to provide publisher ID (`ca-pub-XXXXXXXXXXXXXXXX`)
+   - Replace placeholder in `index.html`
+   - Replace `.ad-slot` divs in all pages with real `<ins class="adsbygoogle">` units
+   - Use responsive ad format
+
+2. **Activate GA4** — user to provide Measurement ID (`G-XXXXXXXXXX`)
+   - Uncomment the GA4 block in `index.html`
+   - Replace `G-XXXXXXXXXX` placeholder
+
+3. **Activate Search Console** — user to provide verification code
+   - Uncomment and fill in the meta tag in `index.html`
+
+4. **More exams** (optional) — target 30+ total
+   - State board exams: BPSC, RPSC, MPPSC
+   - Defence: Coast Guard, BSF, CRPF
+   - Insurance: New India Assurance, Oriental Insurance
+
+5. **More blog articles** — target 12+ total
+   - "UPSC Prelims application photo guide"
+   - "JEE/NEET application document checklist"
+   - "How to fix blurry exam photo on mobile"
+
+6. **Performance** — optional
+   - Add loading="lazy" to all img tags
+   - Add Open Graph image meta tag for social sharing
+
+---
+
+## File Structure (after Session 3)
+
 ```
-I am building "Exam Form Helper India" — a free React website for Indian exam photo/signature resizing.
-GitHub: https://github.com/aRPIT0313/examhelperindia
-
-SESSIONS 1 AND 2 COMPLETE. Build passes 0 errors.
-
-Session 2 completed:
-- /blog route (BlogPage with 5 article cards)
-- /blog/:slug route (BlogArticle with full content renderer)  
-- 5 evergreen blog articles in blogConfig.js
-- 22 exams in examConfig.js (+10 new ones)
-- Recently used tools on Homepage (localStorage)
-- Blog preview section on Homepage
-- Lazy loading for all pages (Suspense)
-- robots.txt, sitemap.xml (28 URLs), manifest.json (PWA)
-- GA4 placeholder in index.html
-- Google Fonts in index.html
-
-SESSION 3 TASKS:
-1. Replace .ad-slot divs with real AdSense code (I'll provide publisher ID)
-2. Activate GA4 (I'll provide G-XXXXXXXXXX)
-3. Add Popular/Trending exams section to Homepage using localStorage counts
-4. Add /blog to Footer links
-5. Google Search Console verification meta tag
-6. Build must pass before ending session
+src/
+├── App.jsx                    (routes: / /tool /exam/:slug /blog /blog/:slug)
+├── index.css
+├── main.jsx
+├── config/
+│   ├── examConfig.js          (22 exams)
+│   └── blogConfig.js          (8 articles)
+├── utils/imageUtils.js
+├── hooks/useImageProcessor.js + useSignaturePad.js
+├── components/
+│   Navbar, Footer (+ Guides link), ImageUploader, RequirementsForm,
+│   PreviewDownload, SignaturePad, ChecklistDownload, ErrorGuide
+└── pages/
+    HomePage (+ Trending Tools), ToolPage (+ visit tracking),
+    BlogPage, BlogArticle
+public/
+    favicon.svg, icons.svg, robots.txt, sitemap.xml (31 URLs), manifest.json
+index.html (AdSense + GA4 + Search Console placeholders, all commented)
 ```
 
 ---
 
-## EXAMS IN CONFIG (22 total)
-SSC: CGL, CHSL, MTS, CPO, GD Constable
-Bank: IBPS PO, IBPS Clerk, SBI PO, SBI Clerk, RBI Grade B, LIC AAO
-Railway: RRB NTPC, RRB Group D
-UPSC/Defence: UPSC CSE, NDA, CDS, CISF AC
-State: MPSC, UPPSC
-Entrance: JEE Main, NEET UG, CUET
+## localStorage Keys Used
+| Key | Purpose |
+|-----|---------|
+| `examhelper_recent_tools` | Array of last 6 visited exam slugs |
+| `examhelper_visit_counts` | Object { slug: visitCount } for trending |
 
-## IMPORTANT RULES
-- Canvas API only, no paid libraries
-- No login anywhere
-- User always enters their own requirements
-- Always show disclaimer + official site link
-- Mobile-first, client-side only
-
-## TECH STACK
-React 18 + Vite 6 + react-router-dom v6 + react-helmet-async + jszip
-Google Fonts: Plus Jakarta Sans + Syne
-Hosting: Vercel (free tier)
+## Tech Stack
+React 18 + Vite + React Router v6 + JSZip + React Helmet Async
+Hosted on Vercel (free tier)

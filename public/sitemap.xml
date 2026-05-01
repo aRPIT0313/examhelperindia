@@ -167,4 +167,19 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://examhelperindia.vercel.app/blog/how-to-fill-ssc-cgl-form-online</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://examhelperindia.vercel.app/blog/ibps-po-application-photo-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://examhelperindia.vercel.app/blog/railway-rrb-form-photo-tips</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

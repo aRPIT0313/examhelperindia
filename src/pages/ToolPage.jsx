@@ -12,6 +12,7 @@ import ErrorGuide from "../components/ErrorGuide";
 import "./ToolPage.css";
 
 const RECENT_KEY = "examhelper_recent_tools";
+const VISIT_KEY = "examhelper_visit_counts";
 
 function saveRecentTool(slug) {
   try {
@@ -25,13 +26,28 @@ function saveRecentTool(slug) {
   }
 }
 
+function trackVisit(slug) {
+  try {
+    const raw = localStorage.getItem(VISIT_KEY);
+    const counts = raw ? JSON.parse(raw) : {};
+    counts[slug] = (counts[slug] || 0) + 1;
+    localStorage.setItem(VISIT_KEY, JSON.stringify(counts));
+  } catch {
+    // ignore storage errors
+  }
+}
+
+
 export default function ToolPage() {
   const { slug } = useParams();
   const exam = slug ? getExamBySlug(slug) : null;
 
   // Record this tool as recently used
   useEffect(() => {
-    if (slug) saveRecentTool(slug);
+    if (slug) {
+      saveRecentTool(slug);
+      trackVisit(slug);
+    }
   }, [slug]);
 
   const img = useImageProcessor();
