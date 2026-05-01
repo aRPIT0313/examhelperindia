@@ -1,10 +1,34 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { useState, useEffect } from "react";
 import { EXAMS, EXAM_CATEGORIES } from "../config/examConfig";
+import { ARTICLES } from "../config/blogConfig";
 import "./HomePage.css";
+
+// localStorage key for recently used tools
+const RECENT_KEY = "examhelper_recent_tools";
+
+function getRecentTools() {
+  try {
+    const raw = localStorage.getItem(RECENT_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
 
 export default function HomePage() {
   const categories = Object.entries(EXAM_CATEGORIES);
+  const [recentSlugs, setRecentSlugs] = useState([]);
+
+  useEffect(() => {
+    setRecentSlugs(getRecentTools());
+  }, []);
+
+  const recentExams = recentSlugs
+    .map((slug) => EXAMS.find((e) => e.slug === slug))
+    .filter(Boolean)
+    .slice(0, 4);
 
   return (
     <>
@@ -42,6 +66,26 @@ export default function HomePage() {
       <div className="container">
         {/* Ad slot */}
         <div className="ad-slot">Advertisement</div>
+
+        {/* Recently used tools */}
+        {recentExams.length > 0 && (
+          <div className="card recent-tools-card">
+            <div className="card-title">🕐 Recently Used</div>
+            <div className="exam-grid">
+              {recentExams.map((exam) => (
+                <Link
+                  key={exam.id}
+                  to={`/exam/${exam.slug}`}
+                  className="exam-card exam-card--recent"
+                >
+                  <div className="exam-name">{exam.name}</div>
+                  <div className="exam-sub">{exam.fullName}</div>
+                  <div className="exam-arrow">Open Tool →</div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* How it works */}
         <div className="card">
@@ -125,6 +169,31 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        <div className="ad-slot">Advertisement</div>
+
+        {/* Blog / Guides section */}
+        <div className="card">
+          <div className="card-title">📖 Free Guides</div>
+          <div className="blog-preview-grid">
+            {ARTICLES.slice(0, 3).map((article) => (
+              <Link
+                key={article.slug}
+                to={`/blog/${article.slug}`}
+                className="blog-preview-card"
+              >
+                <span className="bp-category">{article.category}</span>
+                <h3 className="bp-title">{article.title}</h3>
+                <span className="bp-cta">Read →</span>
+              </Link>
+            ))}
+          </div>
+          <div style={{ textAlign: "center", marginTop: "1rem" }}>
+            <Link to="/blog" className="btn-secondary">
+              View All Guides →
+            </Link>
           </div>
         </div>
 

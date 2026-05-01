@@ -1,0 +1,21 @@
+{
+  "name": "Exam Form Helper India",
+  "short_name": "ExamFormHelper",
+  "description": "Free photo and signature resize tool for Indian competitive exams. No login required.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "utilities"],
+  "lang": "en-IN",
+  "screenshots": []
+}

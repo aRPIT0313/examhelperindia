@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { getExamBySlug, EXAMS } from "../config/examConfig";
@@ -11,9 +11,28 @@ import ChecklistDownload from "../components/ChecklistDownload";
 import ErrorGuide from "../components/ErrorGuide";
 import "./ToolPage.css";
 
+const RECENT_KEY = "examhelper_recent_tools";
+
+function saveRecentTool(slug) {
+  try {
+    const raw = localStorage.getItem(RECENT_KEY);
+    const existing = raw ? JSON.parse(raw) : [];
+    const filtered = existing.filter((s) => s !== slug);
+    const updated = [slug, ...filtered].slice(0, 6);
+    localStorage.setItem(RECENT_KEY, JSON.stringify(updated));
+  } catch {
+    // ignore storage errors
+  }
+}
+
 export default function ToolPage() {
   const { slug } = useParams();
   const exam = slug ? getExamBySlug(slug) : null;
+
+  // Record this tool as recently used
+  useEffect(() => {
+    if (slug) saveRecentTool(slug);
+  }, [slug]);
 
   const img = useImageProcessor();
   const [signatureBlob, setSignatureBlob] = useState(null);

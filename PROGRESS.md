@@ -5,149 +5,111 @@
 - Name: Exam Form Helper India
 - Stack: React + Vite + React Router + JSZip + React Helmet Async
 - Hosting: Vercel (free)
+- GitHub: https://github.com/aRPIT0313/examhelperindia
 - All processing: 100% client-side (Canvas API, no server)
 
-## ✅ SESSION 1 — COMPLETED (May 2026)
+---
 
-### Files Created:
-```
-exam-form-helper/
-├── index.html                          ✅
-├── package.json                        ✅
-├── vite.config.js                      ✅
-├── src/
-│   ├── main.jsx                        ✅
-│   ├── App.jsx                         ✅  (routing: / /tool /exam/:slug)
-│   ├── index.css                       ✅  (global styles + CSS variables)
-│   ├── config/
-│   │   └── examConfig.js               ✅  (12 exams: SSC, IBPS, Railway, UPSC, Entrance)
-│   ├── utils/
-│   │   └── imageUtils.js               ✅  (Canvas API compression, ZIP, download)
-│   ├── hooks/
-│   │   ├── useImageProcessor.js        ✅  (photo upload/compress state)
-│   │   └── useSignaturePad.js          ✅  (draw/upload signature state)
-│   ├── components/
-│   │   ├── Navbar.jsx + .css           ✅  (mobile hamburger menu)
-│   │   ├── Footer.jsx + .css           ✅  (links + disclaimer)
-│   │   ├── ImageUploader.jsx + .css    ✅  (drag/drop + tap)
-│   │   ├── RequirementsForm.jsx + .css ✅  (user-controlled KB/px/format)
-│   │   ├── PreviewDownload.jsx + .css  ✅  (before/after preview)
-│   │   ├── SignaturePad.jsx + .css     ✅  (draw canvas + upload)
-│   │   ├── ChecklistDownload.jsx + .css✅  (checklist + ZIP download)
-│   │   └── ErrorGuide.jsx + .css       ✅  (8 common errors + fixes)
-│   └── pages/
-│       ├── HomePage.jsx + .css         ✅  (landing page with all exams)
-│       └── ToolPage.jsx + .css         ✅  (main tool, works for all exams)
-```
+## ✅ SESSION 1 — COMPLETED
+
+### Build Status: ✅ PASSED
+
+Core structure: All components, hooks, HomePage, ToolPage, 12 exams, Canvas compression.
+
+---
+
+## ✅ SESSION 2 — COMPLETED (May 2026)
 
 ### Build Status: ✅ PASSES (npm run build — 0 errors)
 
-### Working Features:
-- ✅ Homepage with all 12 exams listed by category
-- ✅ Dynamic routing: /exam/ssc-cgl-photo-size, /exam/ibps-po-photo-size, etc.
-- ✅ Generic tool at /tool (no exam preset)
-- ✅ Photo upload (drag/drop + tap)
-- ✅ User-controlled requirements (KB, px, format, bg color, fit mode)
-- ✅ Canvas API compression to exact KB target
-- ✅ Live before/after preview
-- ✅ Photo download
-- ✅ Signature draw (canvas) + upload
-- ✅ Signature processing + download
-- ✅ ZIP combined download (photo + signature)
-- ✅ Completion checklist
-- ✅ Error guide (8 accordion items)
-- ✅ WhatsApp share + copy link
-- ✅ SEO meta tags (React Helmet)
-- ✅ AdSense placeholder slots (4 per page)
-- ✅ Related exam links
-- ✅ Mobile responsive
+### New Files Created:
+```
+src/config/blogConfig.js               (5 full evergreen articles)
+src/pages/BlogPage.jsx + .css          (/blog route)
+src/pages/BlogArticle.jsx + .css       (/blog/:slug route)
+public/robots.txt
+public/sitemap.xml                     (28 URLs with priorities)
+public/manifest.json                   (PWA installable)
+```
+
+### Modified Files:
+```
+src/App.jsx                            (+blog routes, +lazy loading)
+src/config/examConfig.js               (+10 exams = 22 total)
+src/pages/HomePage.jsx                 (+recently used tools, +blog preview)
+src/pages/HomePage.css                 (+new styles)
+src/pages/ToolPage.jsx                 (+localStorage recent tracking)
+index.html                             (+manifest, +Google Fonts, +GA4 placeholder)
+```
+
+### Session 2 Features:
+- BlogPage + BlogArticle with full markdown-like renderer
+- 5 evergreen articles (process guides, no exam specs)
+- 10 more exams (22 total: SSC CPO, GD, NDA, CDS, CISF, SBI Clerk, RBI, LIC, MPSC, UPPSC)
+- Recently used tools (localStorage) on Homepage
+- Blog preview on Homepage
+- Lazy loading (Suspense) for all pages
+- robots.txt, sitemap.xml, manifest.json
+- GA4 placeholder (commented) in index.html
+- Google Fonts loaded in index.html
 
 ---
 
-## 🔄 SESSION 2 — TODO (Start Here Next Session)
+## 🔄 SESSION 3 — TODO
 
-### Priority Tasks:
-1. **Blog/Guides page** — `/blog` route + 5 evergreen articles
-   - "How to fill SSC CGL form step by step"
-   - "Common photo upload errors and fixes"
-   - "JPG vs PNG for exam forms"
-   - "How to read exam notification for photo specs"
-   - "How to create signature for bank exam forms"
+1. Replace AdSense placeholder divs with real AdSense code (need publisher ID)
+2. Activate GA4 in index.html (need Measurement ID G-XXXXXXXXXX)
+3. Add "Popular Exams" trending section on Homepage (localStorage view counts)
+4. Add /blog link to Footer component
+5. Add Google Search Console verification meta tag
+6. More blog articles (optional)
 
-2. **vercel.json** — Add SPA routing config so /exam/:slug works on Vercel
-
-3. **robots.txt + sitemap.xml** — For Google indexing
-
-4. **Google Analytics** — Add GA4 tracking code to index.html
-
-5. **AdSense** — Replace placeholder divs with real AdSense code
-
-6. **PWA / offline support** — Add manifest.json for mobile install
-
-7. **More exams in examConfig.js** — Add 10 more:
-   - SSC CPO, SSC GD, NDA, CDS, CISF
-   - SBI Clerk, RBI Grade B, LIC AAO
-   - MPSC, UPPSC
-
-8. **Performance** — Lazy load pages, add loading states
-
-### Paste This to Continue:
+### Paste to Start Session 3:
 ```
-We are building "Exam Form Helper India" — a React website for resizing 
-exam photos/signatures. Session 1 is complete. 
+I am building "Exam Form Helper India" — a free React website for Indian exam photo/signature resizing.
+GitHub: https://github.com/aRPIT0313/examhelperindia
 
-The project is at: [YOUR GITHUB URL]
+SESSIONS 1 AND 2 COMPLETE. Build passes 0 errors.
 
-Session 1 completed:
-- Full React + Vite setup
-- Dynamic routing (/tool, /exam/:slug)  
-- All components built (ImageUploader, RequirementsForm, PreviewDownload, 
-  SignaturePad, ChecklistDownload, ErrorGuide, Navbar, Footer)
-- All hooks built (useImageProcessor, useSignaturePad)
-- Canvas API compression (no external image libraries)
-- 12 exams in examConfig.js
-- Homepage + ToolPage working
-- Build passes with 0 errors
+Session 2 completed:
+- /blog route (BlogPage with 5 article cards)
+- /blog/:slug route (BlogArticle with full content renderer)  
+- 5 evergreen blog articles in blogConfig.js
+- 22 exams in examConfig.js (+10 new ones)
+- Recently used tools on Homepage (localStorage)
+- Blog preview section on Homepage
+- Lazy loading for all pages (Suspense)
+- robots.txt, sitemap.xml (28 URLs), manifest.json (PWA)
+- GA4 placeholder in index.html
+- Google Fonts in index.html
 
-SESSION 2 TASKS:
-1. Create /blog page with 5 evergreen articles
-2. Add vercel.json for SPA routing
-3. Add robots.txt and sitemap.xml
-4. Add 10 more exams to examConfig.js
-5. Add Google Analytics placeholder
-6. Add PWA manifest.json
-
-Please read the PROGRESS.md and continue from Session 2.
+SESSION 3 TASKS:
+1. Replace .ad-slot divs with real AdSense code (I'll provide publisher ID)
+2. Activate GA4 (I'll provide G-XXXXXXXXXX)
+3. Add Popular/Trending exams section to Homepage using localStorage counts
+4. Add /blog to Footer links
+5. Google Search Console verification meta tag
+6. Build must pass before ending session
 ```
 
 ---
 
-## IMPORTANT RULES (Never Change These)
-- All image processing = Canvas API only, no paid libraries
-- No login/signup anywhere
-- User always enters their own requirements (never trust preset as final)
-- Always show disclaimer and official site link
-- Mobile-first design
-- All processing client-side (zero server cost)
-
-## EXAMS IN CONFIG (12 total)
-SSC: CGL, CHSL, MTS
-Bank: IBPS PO, IBPS Clerk, SBI PO  
+## EXAMS IN CONFIG (22 total)
+SSC: CGL, CHSL, MTS, CPO, GD Constable
+Bank: IBPS PO, IBPS Clerk, SBI PO, SBI Clerk, RBI Grade B, LIC AAO
 Railway: RRB NTPC, RRB Group D
-UPSC: CSE
+UPSC/Defence: UPSC CSE, NDA, CDS, CISF AC
+State: MPSC, UPPSC
 Entrance: JEE Main, NEET UG, CUET
 
-## ROUTES
-/ → HomePage
-/tool → ToolPage (no preset)
-/exam/:slug → ToolPage (with exam preset)
-/blog → BlogPage (TODO Session 2)
-/blog/:article → BlogArticle (TODO Session 2)
+## IMPORTANT RULES
+- Canvas API only, no paid libraries
+- No login anywhere
+- User always enters their own requirements
+- Always show disclaimer + official site link
+- Mobile-first, client-side only
 
 ## TECH STACK
-React 18 + Vite 6
-react-router-dom v6
-react-helmet-async
-jszip (client-side ZIP)
+React 18 + Vite 6 + react-router-dom v6 + react-helmet-async + jszip
 Google Fonts: Plus Jakarta Sans + Syne
 Hosting: Vercel (free tier)
