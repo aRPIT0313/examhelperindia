@@ -232,4 +232,36 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- State PSCs -->
+  <url><loc>https://examhelperindia.vercel.app/exam/mppsc-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/kpsc-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/tnpsc-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/wbpsc-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/gpsc-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/opsc-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/jpsc-photo-size</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/appsc-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/tspsc-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Defence -->
+  <url><loc>https://examhelperindia.vercel.app/exam/army-gd-photo-size</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/navy-aa-ssr-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/bsf-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/ssb-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/itbp-photo-size</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Entrance -->
+  <url><loc>https://examhelperindia.vercel.app/exam/xat-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/nmat-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/bitsat-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/aiims-pg-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/snap-photo-size</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/mat-photo-size</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/cmat-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Police -->
+  <url><loc>https://examhelperindia.vercel.app/exam/delhi-police-photo-size</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/up-police-photo-size</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/rajasthan-police-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/mp-police-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/bihar-police-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://examhelperindia.vercel.app/exam/maharashtra-police-photo-size</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
