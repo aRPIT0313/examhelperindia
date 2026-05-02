@@ -29,6 +29,8 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Resources</h4>
             <Link to="/tool">Custom Resize Tool</Link>
+            <Link to="/print-photo">Print Photo Layout</Link>
+            <Link to="/declaration">Declaration Guide</Link>
             <Link to="/blog">Free Guides</Link>
             <Link to="/blog/how-to-resize-photo-for-exam-form">Photo Resize Guide</Link>
             <Link to="/blog/how-to-create-signature-for-exam-form">Signature Guide</Link>
