@@ -88,6 +88,36 @@ export default function HomePage() {
         {/* Ad slot */}
         <div className="ad-slot">Advertisement</div>
 
+        {/* Quick Tools Strip — visible immediately below hero */}
+        <div className="quick-tools-strip">
+          <Link to="/tool" className="qt-card">
+            <span className="qt-icon">🔧</span>
+            <div className="qt-text">
+              <div className="qt-title">Custom Resize Tool</div>
+              <div className="qt-sub">Any KB · Any format · Instant</div>
+            </div>
+            <span className="qt-arrow">→</span>
+          </Link>
+          <Link to="/print-photo" className="qt-card">
+            <span className="qt-icon">🖨️</span>
+            <div className="qt-text">
+              <div className="qt-title">Print Photo Layout</div>
+              <div className="qt-sub">4/6/9/12 photos on A4</div>
+            </div>
+            <span className="qt-arrow">→</span>
+          </Link>
+          <Link to="/declaration" className="qt-card">
+            <span className="qt-icon">📝</span>
+            <div className="qt-text">
+              <div className="qt-title">Declaration Guide</div>
+              <div className="qt-sub">Handwritten declaration formats</div>
+            </div>
+            <span className="qt-arrow">→</span>
+          </Link>
+        </div>
+
+
+
         {/* Recently used tools */}
         {recentExams.length > 0 && (
           <div className="card recent-tools-card">
