@@ -106,6 +106,14 @@ export default function HomePage() {
             </div>
             <span className="qt-arrow">→</span>
           </Link>
+          <Link to="/photo-guide-2026" className="qt-card qt-card--highlight">
+            <span className="qt-icon">📊</span>
+            <div className="qt-text">
+              <div className="qt-title">Photo Size Guide 2026</div>
+              <div className="qt-sub">All 59+ exams in one table</div>
+            </div>
+            <span className="qt-arrow">→</span>
+          </Link>
           <Link to="/declaration" className="qt-card">
             <span className="qt-icon">📝</span>
             <div className="qt-text">

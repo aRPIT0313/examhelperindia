@@ -44,6 +44,7 @@ export default function App() {
                 <Route path="/blog" element={<BlogPage />} />
                 <Route path="/blog/:slug" element={<BlogArticle />} />
                 <Route path="/declaration" element={<DeclarationPage />} />
+                <Route path="/photo-guide-2026" element={<PhotoGuide2026 />} />
                 <Route path="/print-photo" element={<PrintPhotoPage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>

@@ -24,7 +24,8 @@ function sitemapPlugin() {
         { url: '/tool',         priority: '0.9', changefreq: 'monthly' },
         { url: '/blog',         priority: '0.8', changefreq: 'weekly'  },
         { url: '/print-photo',  priority: '0.9', changefreq: 'monthly' },
-        { url: '/declaration',  priority: '0.8', changefreq: 'monthly' },
+        { url: '/declaration',       priority: '0.8', changefreq: 'monthly' },
+        { url: '/photo-guide-2026',   priority: '0.9', changefreq: 'monthly' },
       ]
 
       // Exam pages — auto-detected from examConfig

@@ -31,6 +31,7 @@ export default function Footer() {
             <Link to="/tool">Custom Resize Tool</Link>
             <Link to="/print-photo">Print Photo Layout</Link>
             <Link to="/declaration">Declaration Guide</Link>
+            <Link to="/photo-guide-2026">Photo Size Guide 2026</Link>
             <Link to="/blog">Free Guides</Link>
             <Link to="/blog/how-to-resize-photo-for-exam-form">Photo Resize Guide</Link>
             <Link to="/blog/how-to-create-signature-for-exam-form">Signature Guide</Link>
