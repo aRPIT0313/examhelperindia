@@ -35,6 +35,7 @@ export default function Footer() {
             <Link to="/blog">Free Guides</Link>
             <Link to="/blog/how-to-resize-photo-for-exam-form">Photo Resize Guide</Link>
             <Link to="/blog/how-to-create-signature-for-exam-form">Signature Guide</Link>
+            
           </div>
         </div>
       </div>
