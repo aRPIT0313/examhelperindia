@@ -11,6 +11,7 @@ const BlogPage = lazy(() => import("./pages/BlogPage"));
 const BlogArticle = lazy(() => import("./pages/BlogArticle"));
 const DeclarationPage = lazy(() => import("./pages/DeclarationPage"));
 const PrintPhotoPage = lazy(() => import("./pages/PrintPhotoPage"));
+const PhotoGuide2026 = lazy(() => import('./pages/PhotoGuide2026'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
