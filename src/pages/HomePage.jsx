@@ -85,10 +85,30 @@ export default function HomePage() {
       </div>
 
       <div className="container">
-        {/* Ad slot */}
-        <a href="https://calpro-online.netlify.app" target="_blank" rel="noopener noreferrer" className="ad-slot cross-promo-banner">
-  🧮 <strong>Free Online Calculator</strong> — Scientific, BMI, Age, Percentage & more. Try it free →
-</a>
+        {/* CalcPro Cross-Promo Banner */}
+        <a
+          href="https://calpro-online.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="calcpro-banner"
+        >
+          <span className="cb-label">Free Tool</span>
+          <div className="cb-left">
+            <div>
+              <div className="cb-logo"><span>CALC</span>PRO</div>
+              <div className="cb-tagline">Advanced Scientific Calculator</div>
+            </div>
+            <div className="cb-divider" />
+            <div className="cb-features">
+              <span className="cb-tag">🔬 Scientific</span>
+              <span className="cb-tag">📐 Matrix</span>
+              <span className="cb-tag">📊 Statistics</span>
+              <span className="cb-tag">∫ Calculus</span>
+              <span className="cb-tag">🔢 Equations</span>
+            </div>
+          </div>
+          <div className="cb-cta">Try Free →</div>
+        </a>
 
         {/* Quick Tools Strip — visible immediately below hero */}
         <div className="quick-tools-strip">

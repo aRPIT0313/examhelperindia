@@ -339,3 +339,104 @@
 @media (max-width: 640px) {
   .quick-tools-strip { grid-template-columns: 1fr; }
 }
+
+/* ── CalcPro Cross-Promo Banner ── */
+.calcpro-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, #0d1b2a 0%, #0a2540 60%, #0d2137 100%);
+  border: 1px solid #00e5ff33;
+  border-radius: 14px;
+  padding: 1.25rem 1.75rem;
+  text-decoration: none;
+  color: #e0f7fa;
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.calcpro-banner:hover {
+  border-color: #00e5ff88;
+  box-shadow: 0 4px 24px rgba(0, 229, 255, 0.15);
+}
+.calcpro-banner::before {
+  content: '';
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 160px; height: 160px;
+  background: radial-gradient(circle, #00e5ff18 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cb-left { display: flex; align-items: center; gap: 1rem; }
+.cb-logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+.cb-logo span { color: #00e5ff; }
+.cb-tagline {
+  font-size: 0.72rem;
+  color: #00e5ffaa;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 0.2rem;
+}
+
+.cb-divider {
+  width: 1px;
+  height: 40px;
+  background: #00e5ff22;
+  flex-shrink: 0;
+}
+
+.cb-features {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.cb-tag {
+  padding: 0.25rem 0.65rem;
+  background: #00e5ff12;
+  border: 1px solid #00e5ff33;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  color: #00e5ffcc;
+  white-space: nowrap;
+}
+
+.cb-cta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #00e5ff;
+  color: #0a1628;
+  padding: 0.55rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 0.88rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: opacity 0.2s;
+}
+.calcpro-banner:hover .cb-cta { opacity: 0.88; }
+
+.cb-label {
+  position: absolute;
+  top: 8px; right: 12px;
+  font-size: 0.65rem;
+  color: #00e5ff44;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .calcpro-banner { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .cb-features { display: none; }
+  .cb-cta { width: 100%; justify-content: center; }
+  .cb-divider { display: none; }
+}
